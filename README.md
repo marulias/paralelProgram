@@ -58,7 +58,6 @@ double multiplyMatricesParallel(const vector<vector<double>>& A,
                                  vector<vector<double>>& C, int num_threads) {
     omp_set_num_threads(num_threads);
     
-    #pragma omp parallel for collapse(2)
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             double sum = 0;
