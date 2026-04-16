@@ -7,14 +7,14 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use('Agg')  # Для сохранения без GUI
+matplotlib.use('Agg')  
 
-# Данные из ваших экспериментов (из отчета)
+
 sizes = [200, 400, 800, 1200, 1600, 2000]
 times = [0.0940, 0.7386, 6.1112, 30.4954, 80.4029, 452.0348]
 mflops = [170.20, 173.30, 167.56, 113.33, 101.89, 35.40]
 
-# Конвертируем MFLOPS в GFLOPS для красоты
+
 gflops = [m / 1000 for m in mflops]
 
 print("=" * 60)
@@ -23,7 +23,7 @@ print("=" * 60)
 
 all_passed = True
 
-# Проверяем только размер 200 (как в вашей программе)
+
 test_size = 200
 result_file = "result_200.txt"
 
@@ -105,7 +105,7 @@ else:
     print(" ОБНАРУЖЕНЫ ОШИБКИ ПРИ ВЕРИФИКАЦИИ!")
 print("=" * 60)
 
-# Строим графики на основе ваших экспериментальных данных
+
 print("\n" + "=" * 60)
 print("ПОСТРОЕНИЕ ГРАФИКОВ")
 print("=" * 60)
