@@ -85,24 +85,24 @@ else:
         is_close = np.allclose(C, expected, rtol=1e-6, atol=1e-8)
         
         if is_close:
-            print(f"   ✅ Верификация пройдена!")
+            print(f"    Верификация пройдена!")
             print(f"   Макс. абсолютная ошибка: {max_abs_diff:.2e}")
             print(f"   Макс. относительная ошибка: {max_rel_diff:.2e}")
         else:
-            print(f"   ❌ Верификация НЕ пройдена!")
+            print(f"    Верификация НЕ пройдена!")
             print(f"   Макс. абсолютная ошибка: {max_abs_diff:.2e}")
             print(f"   Макс. относительная ошибка: {max_rel_diff:.2e}")
             all_passed = False
             
     except Exception as e:
-        print(f"   ❌ Ошибка при проверке: {e}")
+        print(f"    Ошибка при проверке: {e}")
         all_passed = False
 
 print("\n" + "=" * 60)
 if all_passed:
-    print("✅ ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ УСПЕШНО!")
+    print(" ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ УСПЕШНО!")
 else:
-    print("❌ ОБНАРУЖЕНЫ ОШИБКИ ПРИ ВЕРИФИКАЦИИ!")
+    print(" ОБНАРУЖЕНЫ ОШИБКИ ПРИ ВЕРИФИКАЦИИ!")
 print("=" * 60)
 
 # Строим графики на основе ваших экспериментальных данных
@@ -147,7 +147,7 @@ plt.tight_layout()
 
 # Сохраняем график
 plt.savefig('performance_plot.png', dpi=150, bbox_inches='tight')
-print("✅ График сохранён как 'performance_plot.png'")
+print(" График сохранён как 'performance_plot.png'")
 
 try:
     plt.show()
@@ -182,7 +182,7 @@ with open('results_table.txt', 'w', encoding='utf-8') as f:
     f.write(f"4. Производительность составляет от {mflops[0]:.2f} до {mflops[-1]:.2f} MFLOPS\n")
     f.write("5. Падение производительности на больших размерах связано с кэш-промахами\n")
 
-print("\n✅ Таблица сохранена как 'results_table.txt'")
+print("\n Таблица сохранена как 'results_table.txt'")
 print("\n" + "=" * 60)
 print("ВСЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ")
 print("=" * 60)
