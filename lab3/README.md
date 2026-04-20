@@ -88,7 +88,7 @@ for (int i = start_row; i < end_row; i++) {
 2000	1.10	0.62	0.36
 
 ## 4. Графики
-https://performance_plot_mpi.png
+![Графики](performance_plot_mpi.png)   
 
 ## 5. Анализ результатов
 ### 5.1. Время выполнения
