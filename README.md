@@ -135,20 +135,21 @@ mpirun -np $SLURM_NTASKS ./laba
 
 ### Зависимость времени выполнения от размера матрицы
 
-<img width="1285" height="824" alt="time_vs_size" src="https://github.com/user-attachments/assets/54df6af7-5ce1-4a8b-bcb1-835c80138bf2" />
+<img width="1085" height="624" alt="time_vs_size" src="https://github.com/user-attachments/assets/87a0f63e-9551-4dea-a2cf-e23d00d98036" />
+
 
 
 ### Зависимость производительности (MFLOPS) от размера матрицы
 
-<img width="1305" height="824" alt="mflops_vs_size" src="https://github.com/user-attachments/assets/ef1a4fd6-3071-45eb-b2ae-955d44cb0a7e" />
+<img width="1105" height="624" alt="mflops_vs_size" src="https://github.com/user-attachments/assets/ef1a4fd6-3071-45eb-b2ae-955d44cb0a7e" />
 
 ### Ускорение при разном количестве процессов
 
-<img width="1252" height="824" alt="speedup" src="https://github.com/user-attachments/assets/f954bdfa-5825-4036-b2d0-92c3c6819158" />
+<img width="1052" height="624" alt="speedup" src="https://github.com/user-attachments/assets/f954bdfa-5825-4036-b2d0-92c3c6819158" />
 
 ### Эффективность параллелизации
 
-<img width="1279" height="824" alt="efficiency" src="https://github.com/user-attachments/assets/60b28ed2-8fa4-4db1-a846-942f2f17038b" />
+<img width="1079" height="624" alt="efficiency" src="https://github.com/user-attachments/assets/60b28ed2-8fa4-4db1-a846-942f2f17038b" />
 
 
 
