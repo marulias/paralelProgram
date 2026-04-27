@@ -131,6 +131,25 @@ mpirun -np $SLURM_NTASKS ./laba
 | 1600 × 1600 | 80.4029 | 2.3751 | 33.85× |
 | 2000 × 2000 | 452.0348 | 3.4679 | 130.35× |
 
+## Визуализация
+
+### Зависимость времени выполнения от размера матрицы
+
+<img width="1285" height="824" alt="time_vs_size" src="https://github.com/user-attachments/assets/54df6af7-5ce1-4a8b-bcb1-835c80138bf2" />
+
+
+### Зависимость производительности (MFLOPS) от размера матрицы
+
+<img width="1305" height="824" alt="mflops_vs_size" src="https://github.com/user-attachments/assets/ef1a4fd6-3071-45eb-b2ae-955d44cb0a7e" />
+
+### Ускорение при разном количестве процессов
+
+<img width="1252" height="824" alt="speedup" src="https://github.com/user-attachments/assets/f954bdfa-5825-4036-b2d0-92c3c6819158" />
+
+### Эффективность параллелизации
+
+<img width="1279" height="824" alt="efficiency" src="https://github.com/user-attachments/assets/60b28ed2-8fa4-4db1-a846-942f2f17038b" />
+
 
 
 ## Выводы
@@ -142,4 +161,3 @@ mpirun -np $SLURM_NTASKS ./laba
 5. **Масштабируемость** — программа хорошо масштабируется до 8 процессов, особенно на больших матрицах.
 6. **Рекомендации** — для максимальной производительности рекомендуется использовать 8 процессов на матрицах размером от 1200×1200.
 
-## Файлы проекта
