@@ -28,6 +28,7 @@ mpicxx -std=c++11 -O2 -o laba main.cpp functions.cpp
 
  Запуск
 mpirun -np $SLURM_NTASKS ./laba
+```
 
 ## Результаты экспериментов
 
