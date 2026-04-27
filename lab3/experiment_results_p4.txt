@@ -1,0 +1,19 @@
+EXPERIMENTAL DATA
+Number of processes: 4
+========================================
+Size	Time(s)		MFLOPS
+========================================
+200	0.0035		4589.90
+400	0.0315		4067.48
+800	0.2989		3426.02
+1200	1.0960		3153.22
+1600	2.9532		2773.99
+2000	5.2451		3050.45
+
+========================================
+CONCLUSIONS:
+1. Time grows cubically O(n^3) with matrix size
+2. Size 200x200 time: 0.00 sec
+3. Size 2000x2000 time: 5.25 sec
+4. Performance ranges from 4589.90 to 3050.45 MFLOPS
+5. Performance degradation at large sizes due to cache misses
